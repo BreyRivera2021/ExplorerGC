@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Explorer Gaming Competitions</title>
+  <link href="Index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Spartan&display=swap" rel="stylesheet">
+  <script src="Index.js"></script>
+</head>
+
+<body>
+    <!-- content header -->
+    <div class="header">
+      <!--<button style="border: 1px solid white; border-radius: 5px; background-color: transparent; margin-left: 1200px; margin-top: 10px; cursor: pointer" onclick="openNav()">Menu</button>-->
+      <img src="menu.svg" style="height: 50px; width: 50px; margin-left: 1210px; margin-top: 8px; cursor: pointer" onclick="openNav()">
+      <center><h1 style="font-size: 46px; margin-top: -10px;">Explorer Gaming Competitions</h1></center>
+    </div>
+    <!-- nav bar -->
+    <div>
+      <center>
+        <ul>
+          <li style="border-bottom: 1px solid rgb(185, 169, 100);">Home</li>
+          <li>Info</li>
+          <li>Events</li>
+          <li>Contact</li>
+        </ul>
+      </center>
+    </div>
+    <!-- side nav  -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="width: 20px; height: 20px">&times;</a>
+      <h1 id="title" style="display: none" class="name"></h1>
+      <div id="loginScreen" style="display: none">
+        <table>
+          <tr>
+            <td style="margin: 0px">
+              <center><img src="person3.png" style="width: 87px; height: 62px; margin-top: 5px"></center>
+            </td>
+            <td style="margin: 0p">
+              <h3 style="color:rgb(52, 60, 71)">Friends</h3>
+            </td>
+          </tr>
+          <tr>
+            <td style="margin: 0px">
+              <center><img src="circle.png" style="width: 80px; height: 55px; margin-top: 5px; margin-left: 5px"></center>
+            </td>
+            <td style="margin: 0p">
+              <h3 style="color:rgb(52, 60, 71)">Groups</h3>
+            </td>
+          </tr>
+          <tr>
+            <td style="margin: 0px">
+              <center><img src="graph.png" style="width: 65px; height: 40px; margin-top: 5px; margin-left: 5px"></center>
+            </td>
+            <td style="margin: 0p">
+              <h3 style="color:rgb(52, 60, 71)">Stats</h3>
+            </td>
+          </tr>
+          <tr>
+            <td style="margin: 0px">
+              <center><img src="profile.png" style="width: 45px; height: 30px; margin-top: 5px; margin-left: 5px"></center>
+            </td>
+            <td style="margin: 0p">
+              <h3 style="color:rgb(52, 60, 71)">Profile</h3>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <a id="label1" href="javascript:void(0)" onclick="showLogin()">Login</a>
+      <a id="label2" href="#">Signup</a>
+      <div id="login" style="margin-top: 100px; display: none;">
+        <center>
+          <form style="margin-top: 20px;">
+            <input type="text" id="usr" name="usr" placeholder="Username" style="color: gray; margin-bottom: 12px">
+            <input type="password" id="pass" name="pass" placeholder="Password" style="color: gray">
+          </form>
+          <button style="background-color: rgb(52, 60, 71); color: white; font-weight: lighter; border: none; padding: 10px 12px; border-radius: 5px; margin-top: 10px" onclick="login()">SUBMIT</button>
+        </center>
+      </div>
+    </div>
+    <!-- content body -->
+    <div style="padding-top: 45px;">
+      <center>
+        <div id="team" class="body_content">
+          <h2>Form A Team</h2>
+          <center>
+            <div style="width: 275px;">
+              <h3 style="font-weight: lighter">Form a team of up to four players, depending on the game</h3>
+              <p>Learn More &#8250;</p>
+            </div>
+          </center>
+        </div>
+        <div id="compete" class="body_content">
+          <h2>Compete</h2>
+          <center>
+            <div style="width: 275px;">
+              <h3 style="font-weight: lighter">Compete against your own classmates in a bracket lasting muliple weekends</h3>
+              <p>Learn More &#8250;</p>
+            </div>
+          </center>
+        </div>
+        <div id="win" class="body_content">
+          <h2>Win</h2>
+          <center>
+            <div style="width: 275px;">
+              <h3 style="font-weight: lighter">Dominate your opponents and walk away with ultimate bragging rights</h3>
+              <p>Learn More &#8250;</p>
+            </div>
+          </center>
+        </div>
+      </center>
+    </div>
+    <!-- content footer -->
+    <div>
+    </div>
+</body>
+
+</html>

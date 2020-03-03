@@ -1,7 +1,12 @@
 /* Set the width of the side navigation to 250px */
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-  }
+    if(screen.width >= 1200) {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    else if(screen.width <= 1000){
+        document.getElementById("mySidenav").style.width = "100%";
+    }
+}
   
 /* Set the width of the side navigation to 0 */
 function closeNav() {

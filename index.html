@@ -3,7 +3,9 @@
 
 <head>
   <title>Explorer Gaming Competitions</title>
-  <link href="Index.css" rel="stylesheet">
+  <link href="Index.css" media="screen and (max-width: 1300px)" rel="stylesheet">
+  <link href="mobile.css" media="screen and (max-width: 1000px)" rel="stylesheet">
+  <link href="largescreen.css" media="screen and (min-width: 1400px)" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Spartan&display=swap" rel="stylesheet">
   <script src="Index.js"></script>
 </head>
@@ -12,8 +14,8 @@
     <!-- content header -->
     <div class="header">
       <!--<button style="border: 1px solid white; border-radius: 5px; background-color: transparent; margin-left: 1200px; margin-top: 10px; cursor: pointer" onclick="openNav()">Menu</button>-->
-      <img src="menu.svg" style="height: 50px; width: 50px; margin-left: 1210px; margin-top: 8px; cursor: pointer" onclick="openNav()">
-      <center><h1 style="font-size: 46px; margin-top: -10px;">Explorer Gaming Competitions</h1></center>
+      <img src="menu.svg" class="menu_btn" onclick="openNav()">
+      <center><h1 class="title">Explorer Gaming Competitions</h1></center>
     </div>
     <!-- nav bar -->
     <div>
@@ -28,7 +30,7 @@
     </div>
     <!-- side nav  -->
     <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="width: 20px; height: 20px">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <h1 id="title" style="display: none" class="name"></h1>
       <div id="loginScreen" style="display: none">
         <table>
@@ -84,7 +86,7 @@
         <div id="team" class="body_content">
           <h2>Form A Team</h2>
           <center>
-            <div style="width: 275px;">
+            <div class="body_text">
               <h3 style="font-weight: lighter">Form a team of up to four players, depending on the game</h3>
               <p>Learn More &#8250;</p>
             </div>
@@ -93,7 +95,7 @@
         <div id="compete" class="body_content">
           <h2>Compete</h2>
           <center>
-            <div style="width: 275px;">
+            <div class="body_text">
               <h3 style="font-weight: lighter">Compete against your own classmates in a bracket lasting muliple weekends</h3>
               <p>Learn More &#8250;</p>
             </div>
@@ -102,7 +104,7 @@
         <div id="win" class="body_content">
           <h2>Win</h2>
           <center>
-            <div style="width: 275px;">
+            <div class="body_text">
               <h3 style="font-weight: lighter">Dominate your opponents and walk away with ultimate bragging rights</h3>
               <p>Learn More &#8250;</p>
             </div>

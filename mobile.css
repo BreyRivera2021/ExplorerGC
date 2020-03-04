@@ -46,8 +46,6 @@ p{
 }
 .title{
     font-size: 46px; 
-    margin-top: -82px;
-    text-align: center;
     margin-top: -20px;
 }
 .menu_btn{
@@ -115,8 +113,9 @@ a{
     display: block;
 }
 .name{
-    margin-left: 15px;
+    text-align: center;
     margin-top: 0px;
+    font-size: 50px;
     font-weight: lighter;
     color: rgb(52, 60, 71);
 }

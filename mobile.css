@@ -5,6 +5,7 @@
 body{
     background-color: rgb(52, 60, 71);
     overflow-y: auto;
+    overflow-x: hidden;
     margin: 0px;
     padding: 0px;
 }
@@ -45,14 +46,14 @@ p{
     padding: 0px;
 }
 .title{
-    font-size: 42px; 
-    margin-top: -87px;
+    font-size: 44px; 
+    margin-top: -38px;
 }
 .menu_btn{
     height: 110px; 
     width: 110px; 
     margin-left: 25px; 
-    margin-top: 60px;
+    margin-top: 20px;
     cursor: pointer;
     padding: 0px;
 }

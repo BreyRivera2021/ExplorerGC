@@ -2,16 +2,19 @@
 function openNav() {
     if(screen.width >= 1200) {
         document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("menu_btn").style.display = "none";
     }
     else if(screen.width <= 1000){
         document.getElementById("mySidenav").style.width = "100%";
+        document.getElementById("menu_btn").style.display = "none";
     }
 }
   
 /* Set the width of the side navigation to 0 */
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
     document.getElementById("login").style.display = "none";
+    document.getElementById("menu_btn").style.display = "block";
+    document.getElementById("mySidenav").style.width = "0";
 }
 
 function showLogin(){

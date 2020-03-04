@@ -29,7 +29,7 @@ p{
 .body_content{
     width: 100%;
     display: inline-block;
-    font-size: 28px;
+    font-size: 24px;
 }
 .body_text{
     width: 35%;
@@ -55,6 +55,7 @@ p{
     top: 0;
     cursor: pointer;
     padding: 0px;
+    display: block;
 }
 /* The side navigation menu */
 .sidenav {

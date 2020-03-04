@@ -53,6 +53,7 @@ p{
     margin-left: 1210px; 
     margin-top: 8px; 
     cursor: pointer;
+    display: block;
 }
 /* The side navigation menu */
 .sidenav {

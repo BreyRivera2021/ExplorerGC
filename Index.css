@@ -116,3 +116,12 @@ a{
     font-weight: lighter;
     color: rgb(52, 60, 71);
 }
+.submit{
+    background-color: rgb(52, 60, 71); 
+    color: white; 
+    font-weight: lighter; 
+    border: none; 
+    padding: 10px 12px; 
+    border-radius: 5px;
+    margin-top: 10px;
+}

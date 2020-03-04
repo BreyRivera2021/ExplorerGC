@@ -29,12 +29,10 @@ p{
 .body_content{
     width: 100%;
     display: inline-block;
-    margin-bottom: 20px;
-    margin-top: 30px;
-    font-size: 28px;
+    font-size: 24px;
 }
 .body_text{
-    width: 35%;
+    width: 45%;
 }
 .header{
     width: 100%;
@@ -49,14 +47,15 @@ p{
 .title{
     font-size: 46px; 
     margin-top: -82px;
-    margin-left: 10px;
+    text-align: center;
 }
 .menu_btn{
     height: 100px; 
     width: 100px; 
-    margin-left: 20px; 
-    margin-top: 25px; 
+    margin-left: 15px; 
+    margin-top: 27px; 
     cursor: pointer;
+    padding: 0px;
 }
 /* The side navigation menu */
 .sidenav {
@@ -103,7 +102,7 @@ p{
 }
   
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
+@media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }

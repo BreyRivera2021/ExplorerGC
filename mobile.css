@@ -29,14 +29,14 @@ p{
 .body_content{
     width: 100%;
     display: inline-block;
-    font-size: 22px;
+    font-size: 28px;
 }
 .body_text{
     width: 35%;
 }
 .header{
     width: 100%;
-    height: 150px;
+    height: 225px;
     background-image: url(robotics1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,12 +48,13 @@ p{
     font-size: 46px; 
     margin-top: -82px;
     text-align: center;
+    margin-top: -20px;
 }
 .menu_btn{
-    height: 90px; 
-    width: 90px; 
+    height: 100px; 
+    width: 100px; 
     margin-left: 15px; 
-    margin-top: 27px; 
+    top: 0;
     cursor: pointer;
     padding: 0px;
 }

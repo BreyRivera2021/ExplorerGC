@@ -12,7 +12,7 @@ li{
     display: inline-block;
     padding: 10px;
     margin: 10px;
-    font-size: 36px;
+    font-size: 34px;
 }
 li:hover{
     border-bottom: 1px solid rgb(185, 169, 100);
@@ -45,17 +45,16 @@ p{
     padding: 0px;
 }
 .title{
-    font-size: 46px; 
-    margin-top: -20px;
+    font-size: 42px; 
+    margin-top: -87px;
 }
 .menu_btn{
-    height: 100px; 
-    width: 100px; 
-    margin-left: 15px; 
-    top: 0;
+    height: 110px; 
+    width: 110px; 
+    margin-left: 25px; 
+    margin-top: 60px;
     cursor: pointer;
     padding: 0px;
-    display: block;
 }
 /* The side navigation menu */
 .sidenav {

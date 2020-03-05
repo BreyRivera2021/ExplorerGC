@@ -132,3 +132,8 @@ a{
     border-radius: 5px;
     margin-top: 30px;   
 }
+.sidenav_text{
+    padding: 0px;
+    text-align: center;
+    font-weight: lighter;
+}

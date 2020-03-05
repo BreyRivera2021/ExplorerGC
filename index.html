@@ -30,40 +30,32 @@
     </div>
     <!-- side nav  -->
     <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a id="close_btn" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <h1 id="title" style="display: none" class="name"></h1>
-      <div id="loginScreen" style="display: none">
-        <table>
-          <tr>
-            <td style="margin: 0px">
-              <center><img src="person3.png" style="width: 87px; height: 62px; margin-top: 5px"></center>
-            </td>
-            <td style="margin: 0p">
-              <h3 style="color:rgb(52, 60, 71)">Friends</h3>
+      <div id="loginScreen" style="display: none; padding: 0px; width: 100%">
+        <table style="width: 100%">
+          <tr id="friends_tab">
+            <td style="margin: 0px; padding-bottom: 5px">
+              <img src="person3.png" style="width: 87px; height: 62px; margin-top: 0px; padding: 0px; position: fixed;">
+              <a id="friend_text" href="javascript:void(0)" class="sidenav_text" onclick="showFriends()">Friends</a>
             </td>
           </tr>
-          <tr>
-            <td style="margin: 0px">
-              <center><img src="circle.png" style="width: 80px; height: 55px; margin-top: 5px; margin-left: 5px"></center>
-            </td>
-            <td style="margin: 0p">
-              <h3 style="color:rgb(52, 60, 71)">Groups</h3>
+          <tr id="groups_tab">
+            <td style="margin: 0px; padding-bottom: 5px">
+              <img src="circle.png" style="width: 80px; height: 55px; margin-top: 0px; margin-left: 5px; position: fixed">
+              <a id="group_text" href="javascript:void(0)" class="sidenav_text" onclick="showGroups()">Groups</a>
             </td>
           </tr>
-          <tr>
-            <td style="margin: 0px">
-              <center><img src="graph.png" style="width: 65px; height: 40px; margin-top: 5px; margin-left: 5px"></center>
-            </td>
-            <td style="margin: 0p">
-              <h3 style="color:rgb(52, 60, 71)">Stats</h3>
+          <tr id="stats_tab">
+            <td style="margin: 0px; padding-bottom: 5px">
+              <img src="graph.png" style="width: 65px; height: 40px; margin-top: 5px; margin-left: 13px; position: fixed;">
+              <a id="stat_text" href="javascript:void(0)" class="sidenav_text" style="margin-top: 0px" onclick="showStats()">Stats</a>
             </td>
           </tr>
-          <tr>
-            <td style="margin: 0px">
-              <center><img src="profile.png" style="width: 45px; height: 30px; margin-top: 5px; margin-left: 5px"></center>
-            </td>
-            <td style="margin: 0p">
-              <h3 style="color:rgb(52, 60, 71)">Profile</h3>
+          <tr id="profile_tab">
+            <td style="margin: 0px; padding-bottom: 5px">
+              <img src="profile.png" style="width: 45px; height: 30px; margin-top: 5px; margin-left: 23px; position: fixed">
+              <a id="profile_text" href="javascript:void(0)" class="sidenav_text" style="margin-top: -3px" onclick="showProfile()">Profile</a>
             </td>
           </tr>
         </table>
@@ -80,8 +72,28 @@
         </center>
       </div>
     </div>
+    <!-- friends nav bar -->
+    <div id="sidebar_friends" class="secondtab">
+      <a href="javascript:void(0)" style="color: white; text-decoration: none; font-size: 36px; position: absolute; margin: 0px; padding: 0px; top: 0; right: 25px" onclick="closeFriends()">&#8250;</a>
+      <h3 class="sidenav_text" style="color: white; margin-left: 37%">Friends</h3>
+    </div>
+    <!-- groups nav bar -->
+    <div id="sidebar_groups" class="secondtab">
+      <a href="javascript:void(0)" style="color: white; text-decoration: none; font-size: 36px; position: absolute; margin: 0px; padding: 0px; top: 0; right: 25px" onclick="closeGroups()">&#8250;</a>
+      <h3 class="sidenav_text" style="color: white; margin-left: 37%">Groups</h3>
+    </div>
+    <!-- stats nav bar -->
+    <div id="sidebar_stats" class="secondtab">
+      <a href="javascript:void(0)" style="color: white; text-decoration: none; font-size: 36px; position: absolute; margin: 0px; padding: 0px; top: 0; right: 25px" onclick="closeStats()">&#8250;</a>
+      <h3 class="sidenav_text" style="color: white; margin-left: 37%">Stats</h3>
+    </div>
+    <!-- profile nav bar -->
+    <div id="sidebar_profile" class="secondtab">
+      <a href="javascript:void(0)" style="color: white; text-decoration: none; font-size: 36px; position: absolute; margin: 0px; padding: 0px; top: 0; right: 25px" onclick="closeProfile()">&#8250;</a>
+      <h3 class="sidenav_text" style="color: white; margin-left: 37%">Profile</h3>
+    </div>
     <!-- content body -->
-    <div style="padding-top: 45px;">
+    <div style="padding-top: 45px; z-index: -1;">
       <center>
         <div id="team" class="body_content">
           <h2>Form A Team</h2>
@@ -111,6 +123,9 @@
           </center>
         </div>
       </center>
+    </div>
+    <div id="overlay" class="overlay">
+
     </div>
     <!-- content footer -->
     <div>
